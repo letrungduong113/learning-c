@@ -74,3 +74,25 @@ int main() {
         printf("giá trị chia 2 số = %f\n", chiaNguyenHaiSo);
     }
 }
+
+/*
+* Bài 4: Nhập vào hai số nguyên a, b. So sánh xem số nào lớn hơn, số nào nhỏ hơn
+* hay hai số bằng nhau. In kết quả ra màn hình. 
+*/
+
+
+int main() {
+    int a,b;
+    puts("Nhập vào giá trị a: ");
+    scanf("%d", &a);
+    puts("Nhập vào giá trị b: ");
+    scanf("%d", &b);
+
+    if(a == b) {
+        printf("giá trị của a và b là bằng nhau\n");
+    } else if (a > b) {
+        printf("giá trị của a lớn hơn b\n");
+    } else {
+        printf("giá trị của a nhỏ hơn b\n");
+    }
+}
