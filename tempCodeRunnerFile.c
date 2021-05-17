@@ -1,0 +1,1 @@
+ // float chiaNguyenHaiSo = (float) b / a;

@@ -38,3 +38,39 @@ int main() {
 * chúng. Lưu ý khi xử lý phép chia sẽ cần ép kiểu, kiểm tra mẫu khác 0. Xuất
 * kết quả ra màn hình.
 */
+
+int main() {
+    int a, b;
+    // Nhập giá trị từ bàn phím a, b và lưu vào biến a, b
+    puts("Nhập giá trị cho số a: ");
+    scanf("%d", &a);
+
+    puts("Nhập giá trị cho số b: ");
+    scanf("%d", &b);
+
+
+    // tổng 2 số nguyên
+    int tongHaiSo = a + b;
+    printf("giá trị tổng 2 số = %d\n", tongHaiSo);
+
+    // hiệu 2 số nguyên
+    int hieuHaiSo = a - b;
+    printf("giá trị hiệu 2 số = %d\n", hieuHaiSo);
+
+    // tổng 2 số nguyên
+    int nhanHaiSo = a * b;
+    printf("giá trị nhân 2 số = %d\n", nhanHaiSo);
+
+    // chia 2 số nguyên
+    // ép kiểu cách 1: 
+    float chiaNguyenHaiSo = (float) b / a;
+
+    // ép kiểu cách 2:
+    // float chiaNguyenHaiSo = 1.0 * b / a;
+   
+    if(b == 0) {
+        printf("giá trị số b phải khác 0\n");
+    } else {
+        printf("giá trị chia 2 số = %f\n", chiaNguyenHaiSo);
+    }
+}
