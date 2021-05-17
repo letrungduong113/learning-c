@@ -25,3 +25,13 @@ int main() {
     }
     return 0;
 }
+
+int main() {
+    int money = 1000;
+    if(money >= 1000) {
+        printf("A la trieu phu");
+    } else {
+        printf("A khong phai trieu phu");
+    }
+    return 0;
+}
