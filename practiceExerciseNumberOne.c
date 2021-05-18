@@ -96,3 +96,46 @@ int main() {
         printf("giá trị của a nhỏ hơn b\n");
     }
 }
+
+/*
+* Bài 5: Hãy nhập 4 số nguyên a, b, c, d. Tìm giá trị lớn nhất của chúng và gán giá trị
+* lớn nhất đó cho biến max. In giá trị max tìm được ra màn hình. Trong trường
+* hợp 4 số bằng nhau thì in ra: không có số lớn nhất. 
+*/
+
+/*
+* Cách làm: 
+* - Khai báo 4 số nguyên a ,b, c, d
+* - Khai báo biến max = a;
+* - Nếu b > max thì biến max = b, c > max thì biến max = c, d > max thì biến max = d
+* - Kiểm tra xem 4 số a,b, c, d bằng nhau khồng thì in ra kết quả 4 số bằng nhau còn không thì in ra biến max
+*/
+
+int main() {
+    int a ,b, c, d;
+    puts("Nhập vào giá trị a: ");
+    scanf("%d", &a);
+    puts("Nhập vào giá trị b: ");
+    scanf("%d", &b);
+    puts("Nhập vào giá trị c: ");
+    scanf("%d", &c);
+    puts("Nhập vào giá trị d: ");
+    scanf("%d", &d);
+  int max = a;
+  if(b > max) {
+       max = b;
+  }
+   if(c > max) {
+        max = c;
+   }
+   if(d > max) {
+        max = d;
+   }
+
+   if( a == b && b == c && c == d) {
+        printf("4 số bằng nhau");
+   } else {
+        printf("giá trị của max = %d\n", max);
+   }
+    return 0;
+}
