@@ -170,3 +170,33 @@ int main() {
      printf("Diện tích hình tròn dienTichHinhTron = %f\n", dienTichHinhTron);
      printf("Chu vi hình tròn chuViHinhTron = %f\n", chuViHinhTron);
 }
+
+/*
+* Bài 8: Giải và biện luận phương trình bậc nhất a𝑥 + b = 𝟎
+*/
+/*
+* Cách làm: 
+* - Khai báo 3 số thực a,b, x
+* - Nếu a = 0 thì phương trình vô nghiệm do mẫu = 0 thì không chia được
+* - Nếu a # 0, b = 0 thì phương trình có vô số nghiệm
+* - Nếu a # 0 && b # 0 thì nghiệm phương trình là x = -b/a
+*/
+
+int main() {
+     float a,b, x;
+
+     puts("Nhập số thực a: ");
+     scanf("%f", &a);
+     puts("Nhập số thực b: ");
+     scanf("%f", &b);
+     if(a == 0) {
+          printf("Phương trình không có nghiệm\n");
+     } else if (a !=0  && b == 0) {
+           printf("Phương trình có vô số nghiệm\n");
+     } else {
+          x = -b/a;
+          printf("Phường trình có nghiệm x = %f\n", x);
+     }
+     
+     return 0;
+}
