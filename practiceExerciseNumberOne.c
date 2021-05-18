@@ -155,3 +155,18 @@ int main() {
      printf("Chu vi HCN chuViHCN = %d\n", chuViHCN);
      printf("Diện tích HCN dienTichHCN = %d\n", dienTichHCN);
 }
+
+/*
+* Bài 7: Viết chương trình nhập bán kính của hình tròn và tính chu vi, diện tích hình tròn đó.
+*/
+
+int main() {
+     const float PI = 3.141592;
+     int a;
+     puts("Nhập vào bán kính hình tròn: ");
+     scanf("%d", &a);
+     float dienTichHinhTron = (float) PI * a;
+     float chuViHinhTron = (float) 2 * PI * a;
+     printf("Diện tích hình tròn dienTichHinhTron = %f\n", dienTichHinhTron);
+     printf("Chu vi hình tròn chuViHinhTron = %f\n", chuViHinhTron);
+}
