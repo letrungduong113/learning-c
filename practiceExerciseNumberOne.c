@@ -139,3 +139,19 @@ int main() {
    }
     return 0;
 }
+/*
+* Bài 6: Viết chương trình nhập vào hai cạnh của hình chữ nhật và tính chu vi và diện tích của hình chữ nhật đó. Hiển thị kết quả lên màn hình.
+*/
+
+int main() {
+     int a,b;
+     puts("Nhập vào chiều dài hình chữ nhật: ");
+     scanf("%d", &a);
+     puts("Nhập vào chiều rộng hình chữ nhật: ");
+     scanf("%d", &b);
+
+     int chuViHCN = 2 * (a + b);
+     int dienTichHCN = a * b;
+     printf("Chu vi HCN chuViHCN = %d\n", chuViHCN);
+     printf("Diện tích HCN dienTichHCN = %d\n", dienTichHCN);
+}
