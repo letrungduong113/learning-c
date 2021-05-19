@@ -232,3 +232,24 @@ int main() {
         printf("Phương trình có 2 nghiệm %f, %f\n", x1, x2);
     }
 }
+
+
+/*
+* Bài 10: Nhập vào ba số a, b, c (là các số thực không âm). Kiểm tra xem đó có phải là ba cạnh của một tam giác hay không.
+*/
+
+int main() {
+     int a,b,c;
+     puts("Nhập vào cạnh a:");
+     scanf("%f", &a);
+     puts("Nhập vào cạnh b:");
+     scanf("%f", &b);
+     puts("Nhập vào cạnh c:");
+     scanf("%f", &c);
+
+     if(a + b > c && b+ c > a && c + a > b) {
+          printf("giá trị a,b,c là 3 cạnh tam giác");
+     } else {
+           printf("giá trị a,b,c không là 3 cạnh tam giác");
+     }
+}
