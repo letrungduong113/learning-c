@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 /*
 * Bài 1: Viết chương trình in ra nội dung của một chuỗi kí tự nào đó. Ví dụ: “Hello
 * World!”.
@@ -199,4 +200,35 @@ int main() {
      }
      
      return 0;
+}
+
+
+/*
+* Bài 9: Giải và biện luận phương trình bậc 2: a𝑥2+b𝑥1+c=𝟎
+*/
+
+int main() {
+    float a,c,b, x, denTa, x1, x2;
+    puts("Nhập vào số a: ");
+    scanf("%f", &a);
+    puts("Nhập vào số b: ");
+    scanf("%f", &b);
+    puts("Nhập vào số c: ");
+    scanf("%f", &c);
+
+    denTa = b*b - 4*a*c;
+    float phepTinh1 = -b + sqrt(denTa);
+    float phepTinh2 = 2* a;
+    float phepTinh3 = -b - sqrt(denTa);
+    printf("console.log %f\n", denTa);
+    if(denTa < 0) {
+        printf("Phương trình vô nghiệm\n");
+    } else if (denTa == 0) {
+        x = -b/(2*a);
+        printf("Phương trình có nghiệm kép = %f", x);
+    } else {
+        x1 = phepTinh1 / phepTinh2;
+        x2 = phepTinh3/ phepTinh2;
+        printf("Phương trình có 2 nghiệm %f, %f\n", x1, x2);
+    }
 }
