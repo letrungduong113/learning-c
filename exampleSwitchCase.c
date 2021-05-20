@@ -123,3 +123,40 @@ int main() {
         }
 }
 }
+
+
+/*
+* Tìm số ngày của một tháng bất kỳ được nhập từ bàn phím
+*/
+int main() {
+    int month;
+    puts("Nhập vào tháng cần tìm ngày");
+    scanf("%d", &month);
+    switch(month) {
+        case 1: 
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12: {
+            printf("Tháng có 31 ngày\n");
+            break;
+        }
+        case 2: {
+            printf("Tháng có 28 hoặc 29 ngày\n");
+            break;
+        }
+        case 4:
+        case 6:
+        case 9:
+        case 11: {
+            printf("Tháng có 30 ngày\n");
+            break;
+        }
+        default: {
+            printf("Tháng bạn nhập vào không hợp lệ\n");
+            break;
+        }
+    }
+}
