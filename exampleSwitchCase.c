@@ -160,3 +160,36 @@ int main() {
         }
     }
 }
+
+/*
+* Kiểm tra ký tự là nguyên âm hay phụ âm
+* Chú ý: ''A", "a", "E", "e", "O", "o", "I", "i", "U", "u" là nguyên âm, tất cả các ký tự còn lại là phụ âm
+*/
+
+int main() {
+    printf("Nhập vào ký tự cần kiểm tra\n");
+    char kiemTraKyTu = getchar();
+    if(kiemTraKyTu >= 'a' && kiemTraKyTu <= 'z' || kiemTraKyTu >= 'A' && kiemTraKyTu <= 'Z') {
+        switch(kiemTraKyTu) {
+                case 'A':
+                case 'a':
+                case 'E':
+                case 'e':
+                case 'O':
+                case 'o':
+                case 'I':
+                case 'i':
+                case 'U':
+                case 'u': {
+                    printf("Đây là những ký tự nguyên âm\n");
+                    break;
+                }
+                default: {
+                    printf("Đây là những ký tự phụ âm\n");
+                    break;
+                }
+            }
+    } else {
+        printf("Ký tự bạn nhập vào không hợp lệ\n");
+    }
+}
