@@ -271,10 +271,14 @@ int main() {
     puts("Nhập vào giá trị d: ");
     scanf("%d", &d);
 
+    int min = a;
+    if(min > d) {
+        min = d;
+    }
     if(d > c) {
         min = c;
-    } 
-    if(min > b) {
+    }
+    if(b < c) {
         min = b;
     }
 
