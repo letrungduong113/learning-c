@@ -260,6 +260,12 @@ int main() {
 * hợp 4 số bằng nhau thì in ra: không có số nhỏ nhất. 
 */
 
+/*
+* Cách làm
+* - Đặt số min = a;
+* - So sánh a với số cuối cùng là d sau đó so sánh từ d trở về c, b để xét hết case -> tìm ra số nhỏ nhất
+*/
+
 int main() {
     int a ,b, c, d, min ;
     puts("Nhập vào giá trị a: ");
