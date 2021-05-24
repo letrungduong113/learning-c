@@ -55,3 +55,20 @@ int main() {
     }
      printf("\n");
 }
+
+// Viết chương trình tính tổng các số nguyên được nhập từ bàn phím cho đến khi nhập số 0 thì dừng.
+int main() {
+    int a, tinhTong;
+    puts("Nhập vào 1 số nguyên: ");
+    scanf("%d", &a);
+    tinhTong = a;
+    while (a  != 0) {
+        puts("Nhập vào 1 số nguyên: ");
+        scanf("%d", &a);
+        tinhTong = tinhTong + a;
+        if(a == 0) {
+            printf("Tổng bạn nhận được: %d\n", tinhTong);
+        }
+    }
+    
+}
