@@ -72,3 +72,15 @@ int main() {
     }
     
 }
+
+
+// Hãy viết chương trình yêu cầu người dùng nhập vào một số nằm trong khoảng từ 1 đến 100. Nếu người dùng nhập số khác thì yêu cầu nhập lại
+int main () {
+    int i;
+    puts("Nhập vào 1 số: ");
+    scanf("%d", &i);
+    while(1<= i && i <= 100) {
+        puts("Nhập vào 1 số: ");
+        scanf("%d", &i);
+    }
+}
