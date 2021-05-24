@@ -10,3 +10,12 @@ int main() {
         }
     }
 }
+// Viết chương trình in ra tất cả ký tự thuộc bảng mã ASCII từ 0 đến 255.
+int main() {
+        unsigned char count;
+        count = 32;
+        while(32 <= count && count < 255) {
+            printf("%d - %c\n", count, count);
+            ++count;
+        }
+}
