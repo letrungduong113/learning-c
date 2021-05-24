@@ -19,3 +19,39 @@ int main() {
             ++count;
         }
 }
+
+// Viết chương trình sử dụng vòng lặp while để chương trình in ra như sau:
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+
+int main() {
+    int a = 1;
+    printf("%d\n", a);
+    while(a <= 2) {
+         printf("%d ", a);
+         ++a;
+    }
+     printf("\n");
+    a = 1;
+    while(a <= 3) {
+         printf("%d ", a);
+         ++a;
+    }
+      printf("\n");
+    a = 1;
+    while(a <= 4) {
+         printf("%d ", a);
+         ++a;
+    }
+    a = 1;
+    printf("\n");
+    while(a <= 5) {
+            
+         printf("%d ", a);
+         ++a;
+    }
+     printf("\n");
+}
