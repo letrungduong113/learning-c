@@ -84,3 +84,26 @@ int main () {
         scanf("%d", &i);
     }
 }
+
+// Viết chương trình C để tính tổng 10 số đầu tiên được nhập từ bàn phím.
+
+
+int main () {
+    int a, tinhTong, demSoLap;
+    demSoLap = 1;
+    puts("Nhập vào số nguyên:");
+    scanf("%d", &a);
+    tinhTong = a;
+    while(a != 0) {
+        puts("Nhập vào số nguyên:");
+        scanf("%d", &a);
+        ++demSoLap;
+        tinhTong = tinhTong + a;
+        if(demSoLap == 10) {
+            printf("Tổng 10 số đầu tiên nhập từ bàn phím %d\n", tinhTong);
+            break;
+        }
+        
+    }
+    
+}
