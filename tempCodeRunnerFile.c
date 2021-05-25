@@ -1,1 +1,1 @@
-luaChon
+if(i>= 10) break;
