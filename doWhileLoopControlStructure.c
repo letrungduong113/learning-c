@@ -41,3 +41,8 @@ int main() {
         scanf("%d",&a);
     } while( a <= 0);
 }
+
+/*
+* Do-while: nội dung lặp sẽ thực hiện ít nhất 1 lần do chạy tuần tự từ do -> while
+* While: nội dung lặp sẽ thực hiện chỉ khi nào điều kiện biểu thức / giá trị thỏa mãn
+*/
