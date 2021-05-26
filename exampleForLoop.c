@@ -110,8 +110,8 @@ int main() {
     puts("Nhập vào số tự nhiên");
     scanf("%d", &a);
 
-    if(a == 0) 
-        printf("Nhập số khác 0");
+    if(a < 0) 
+        printf("Số bạn nhập chưa hợp lệ");
     else {
             for(int i = 0; i < a; ++i) {
                 S = S + i;
