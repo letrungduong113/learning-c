@@ -79,3 +79,23 @@ int main() {
         printf("Tổng từ 1 đến a %d\n", sum);
     }
 }
+
+
+
+// Bài 6:Nhập số tự nhiên n rồi tính tổng(lưu ý phép chia các số nguyên):
+// S = 1 + 1/2 + 1/3 + ... + 1/n
+
+int main() {
+    int a ;
+    double sum = 0;
+    puts("Nhập vào số tự nhiên");
+    scanf("%d", &a);
+    if(a == 0) 
+        printf("Nhập số khác 0");
+    else {
+        for(int i = 1; i <= a; i++) {
+            sum = sum + (double) 1/i;
+        }
+        printf("Đáp án %lf\n", sum);
+    }
+}
