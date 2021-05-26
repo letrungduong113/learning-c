@@ -82,7 +82,7 @@ int main() {
 
 
 
-// Bài 6:Nhập số tự nhiên n rồi tính tổng(lưu ý phép chia các số nguyên):
+// Bài 6: Nhập số tự nhiên n rồi tính tổng(lưu ý phép chia các số nguyên):
 // S = 1 + 1/2 + 1/3 + ... + 1/n
 
 int main() {
@@ -98,4 +98,38 @@ int main() {
         }
         printf("Đáp án %lf\n", sum);
     }
+}
+
+// Bài 7: Nhập vào một số tự nhiên n rồi tính:
+// S = tổng các số tự nhiên không lớn hơn n.
+// S1 = tổng các số tự nhiên lẻ không lớn hơn n.
+// S2 = tổng các số tự nhiên chẵn không lớn hơn n.
+
+int main() {
+    int a, S = 0, S1 = 0, S2 = 0;
+    puts("Nhập vào số tự nhiên");
+    scanf("%d", &a);
+
+    if(a == 0) 
+        printf("Nhập số khác 0");
+    else {
+            for(int i = 0; i < a; ++i) {
+                S = S + i;
+            }
+
+            for(int i = 0; i < a; ++i) {
+                if(i % 2 == 0) continue;
+                    S1 = S1 + i;
+            }
+
+            for(int i = 0; i < a; ++i) {
+                if(i % 2 != 0) continue;
+                    S2 = S2 + i;
+            }
+             
+
+            printf("Tổng các số tự nhiên không lớn hơn n S = %d\n", S);
+            printf("Tổng các số tự nhiên lẻ không lớn hơn n S1 = %d\n", S1);
+            printf("Tổng các số tự nhiên chẵn không lớn hơn n S2 = %d\n", S2);
+        }
 }
