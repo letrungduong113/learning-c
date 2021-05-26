@@ -63,3 +63,19 @@ int main () {
         }
     }
 }
+
+// Bài 5: Nhập số tự nhiên n rồi tính tổng: S = 1 + 2 + ... + n
+
+int main() {
+    int a, sum = 0;
+    puts("Nhạp vào số tự nhiên");
+    scanf("%d", &a);
+    if(a < 0) 
+        printf("Số nhập vào không hợp lệ");
+    else {
+        for(int i = 0; i <= a; ++i) {
+            sum = sum + i;
+        }
+        printf("Tổng từ 1 đến a %d\n", sum);
+    }
+}
