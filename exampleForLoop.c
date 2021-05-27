@@ -133,3 +133,25 @@ int main() {
             printf("Tổng các số tự nhiên chẵn không lớn hơn n S2 = %d\n", S2);
         }
 }
+
+// Bài 8: Nhập vào 1 số nguyên n, yêu cầu xuất tất cả số nguyên tố từ 1 đến n (mỗi số cách 1 khoảng trắng), nếu không có số nào, xuất -1.
+
+#include <stdio.h>
+int main() {
+    int a;
+    puts("Nhập vào sô nguyên ");
+    scanf("%d", &a);
+
+    if(a < 0) 
+        printf("Số nhập vào không hợp lệ");
+    else {
+        for(int i = 1; i <= a; i++) {
+            int k = 0;
+            for(int j = 1; j <= i; j++) {
+                if(i % j == 0)
+                    ++k;
+            }
+            if(k == 2) printf("%d\n", i);
+        }
+    }
+}
