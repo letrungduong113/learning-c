@@ -135,8 +135,6 @@ int main() {
 }
 
 // Bài 8: Nhập vào 1 số nguyên n, yêu cầu xuất tất cả số nguyên tố từ 1 đến n (mỗi số cách 1 khoảng trắng), nếu không có số nào, xuất -1.
-
-#include <stdio.h>
 int main() {
     int a;
     puts("Nhập vào sô nguyên ");
@@ -154,4 +152,25 @@ int main() {
             if(k == 2) printf("%d\n", i);
         }
     }
+}
+
+// Bài 9: Nhập số nguyên dương n và tính tổng: S = 1 + 1.2 + 1.2.3 + ... + 1.2.3...n
+
+int main() {
+    int n, sum = 0, volume = 1;
+    puts("Nhập vào số nguyên dương: ");
+    scanf("%d", &n);
+    if(n < 0) 
+        printf("Đây không phải số nguyên dương");
+    else {
+        for(int i = 1; i <= n; ++i) {
+            volume = volume * i; // volume1 = 1 * 1 =1; volume2 = 1 * 2 =2; volume3 = 2 * 3 =6; volume4 = 4 * 6 =24; volume5 = 5 * 24 =120;volume6 = 6 * 120 =720
+            
+            sum = sum + volume; // sum1 = 0 + 1 = 1; sum2 = 1 + 2 = 3;sum3 = 3 + 6 = 9; sum4 = 9 + 24 =33; sum5 = 33 + 120 =153;sum6 = 153 + 720 = 873
+            
+        }
+    
+        printf("%d\n", sum);
+    }
+    
 }
