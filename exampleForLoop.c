@@ -180,9 +180,34 @@ int main() {
     int n, sum = 0;
     puts("Nhập số tự nhiên: ");
     scanf("%d", &n);
-    for(int i=0; i<=n; i++) {
+
+    if(n < 0)
+        printf("Số nhập vào không hợp lệ");
+    else {
+        for(int i=0; i<=n; i++) {
         if(i % 7 != 0) continue;
         sum += i;
+        }
+        printf("%d\n", sum);
     }
-    printf("%d\n", sum);
+   
+}
+
+// Bài 11: Nhập số tự nhiên n rồi liệt kê các ước số của đó. Số đó bao nhiêu ước?
+
+int main () {
+    int n, bienDem = 0;
+    puts("Nhập vào số tự nhiên: ");
+    scanf("%d", &n);
+    if(n < 0)
+        printf("Số nhập vào không hợp lệ");
+    else {
+       for(int i = 1; i <= n; ++i) {
+        if(n % i != 0) continue;
+            ++bienDem;
+            printf("biến %d là ước của %d\n", i, n);
+         }
+        printf("Số %d có %d ước\n", n, bienDem);
+    }
+    
 }
