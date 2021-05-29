@@ -174,3 +174,15 @@ int main() {
     }
     
 }
+// Bài 10: Nhập số tự nhiên n rồi tính tổng các số tự nhiên không lớn hơn n và chia hết cho 7.
+
+int main() {
+    int n, sum = 0;
+    puts("Nhập số tự nhiên: ");
+    scanf("%d", &n);
+    for(int i=0; i<=n; i++) {
+        if(i % 7 != 0) continue;
+        sum += i;
+    }
+    printf("%d\n", sum);
+}
