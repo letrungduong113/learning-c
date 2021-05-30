@@ -215,7 +215,7 @@ int main () {
 // Bài 12: Viết chương trình tìm ước chung lớn nhất và bội số chung nhỏ nhất của hai số nguyên a, b.
 
 int main () {
-    int a ,b, UCLN = 1;
+    int a ,b, UCLN = 1,BCNN = 0, giaTriA, giaTriB, soSanh2So;
     puts("Nhập vào số nguyên: ");
     scanf("%d", &a);
     puts("Nhập vào số nguyên: ");
@@ -233,5 +233,20 @@ int main () {
     }
 
     printf("Ước chung lớn nhất = %d\n", UCLN);
+
+    if(a > b) soSanh2So = a;
+    else if (a < b ) soSanh2So = b;
+    else soSanh2So = a;
+    for(int i=soSanh2So; 0 < i ; i--) {
+        giaTriA = a * i;
+        for(int j =  soSanh2So; 0 < j; j --) {
+            giaTriB  = b * j;
+            if(giaTriA == giaTriB) {
+                BCNN = giaTriB;
+                break;
+            }
+        }
+    }
+    printf("Bội chung nhỏ nhất = %d\n", BCNN);
     
 }
